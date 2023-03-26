@@ -19,5 +19,5 @@ app.listen(process.env.port,async()=>{
     } catch (error) {
         console.log(error)
     }
-    console.log("Server is running on port",process.env.port)
+    console.log("Server is running on port Number",process.env.port)
 })
