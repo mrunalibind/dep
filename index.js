@@ -12,15 +12,10 @@ app.use(auth)
 let {noteRoute}=require("./routes/note_route")
 app.use("/note",noteRoute);
 
-
-
-
-
-
 app.listen(process.env.port,async()=>{
     try {
         await connection
-        console.log("Connected to mongoDB")
+        console.log("Connected to mongoDB DataBase")
     } catch (error) {
         console.log(error)
     }
